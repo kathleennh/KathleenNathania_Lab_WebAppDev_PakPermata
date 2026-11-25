@@ -4,9 +4,9 @@ export default function LandingPage() {
   return (
     <section className="rounded-lg border bg-white p-6 sm:p-10">
       <p className="text-sm font-medium text-gray-500">Sistem Perpustakaan Sekolah</p>
-      <h1 className="mt-2 text-3xl font-bold tracking-tight">Selamat Datang di Pustakaku</h1>
+      <h1 className="mt-2 text-3xl font-bold tracking-tight text-black">Selamat Datang di Pustakaku</h1>
       <p className="mt-4 max-w-2xl text-gray-600">
-        Pustakaku membantu pengelolaan katalog buku perpustakaan SMA secara digital—mulai dari
+        Pustakaku membantu pengelolaan katalog buku perpustakaan SMA secara digital, mulai dari
         mengecek ketersediaan stok buku, mencari judul atau penulis, melihat detail koleksi,
         hingga menambahkan buku baru.
       </p>

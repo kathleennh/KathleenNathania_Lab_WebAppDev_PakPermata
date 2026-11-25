@@ -2,7 +2,7 @@
 
 import { useActionState } from "react";
 import Link from "next/link";
-import { tambahBuku, type FormBukuState } from "@/app/actions";
+import { tambahBuku, type FormBukuState } from "@/app/action";
 
 const initialState: FormBukuState = {
     sukses: false,
@@ -13,11 +13,11 @@ export default function FormTambahBuku() {
     const [state, formAction, pending] = useActionState(tambahBuku, initialState);
 
     return (
-        <form action={formAction} className="max-w-2xl space-y-4 rounded-lg border bg-white p-6">
-            <h1 className="text-2xl font-bold">Tambah buku baru</h1>
+        <form action={formAction} className="max-w-2xl space-y-4 rounded-lg border bg-white p-6 text-gray-900">
+            <h1 className="text-2xl font-bold text-gray-900">Tambah buku baru</h1>
 
             <div>
-                <label htmlFor="judul" className="block text-sm font-medium">
+                <label htmlFor="judul" className="block text-sm font-medium text-gray-900">
                     Judul *
                 </label>
                 <input
@@ -26,7 +26,7 @@ export default function FormTambahBuku() {
                     type="text"
                     placeholder="Judul buku"
                     defaultValue={state.values?.judul ?? ""}
-                    className="mt-1 w-full rounded border border-gray-300 px-3 py-2 text-sm"
+                    className="mt-1 w-full rounded border border-gray-300 bg-white px-3 py-2 text-sm text-gray-900 placeholder:text-gray-500"
                 />
                 {state.galat?.judul && (
                     <p className="mt-1 text-xs font-medium text-red-600">{state.galat.judul}</p>

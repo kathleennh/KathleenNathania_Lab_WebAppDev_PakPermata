@@ -24,7 +24,7 @@ export default async function DetailBukuPage({
 
     return (
         <div className="space-y-4">
-            <Link href="/buku" className="inline-block text-sm text-gray-700 underline hover:text-black">
+            <Link href="/buku" className="inline-block text-sm text-white-700 underline hover:text-black">
                 Kembali ke daftar
             </Link>
 
@@ -43,7 +43,7 @@ export default async function DetailBukuPage({
                     </div>
 
                     <div className="space-y-2 md:col-span-2">
-                        <h1 className="text-2xl font-bold">{buku.judul}</h1>
+                        <h1 className="text-2xl font-bold text-gray-900">{buku.judul}</h1>
                         <p className="text-sm text-gray-700">Penulis: {buku.penulis}</p>
                         <p className="text-sm text-gray-700">
                             Kategori: {buku.kategori}
